@@ -12,7 +12,12 @@ SRC = \
     utils/display/forint/difor.c \
     utils/array/array.c \
     utils/array/dynamic/stack/istack.c \
-    utils/sizelist/csize.c
+    utils/sizelist/csize.c \
+    utils/inputs/input_char/input_char.c \
+    utils/inputs/input_int/input_int.c \
+    utils/inputs/input_float/input_float.c \
+    utils/typeof_input/typeof_input.c \
+    utils/fgets_dynamic/fgets_dynamic.c
 
 # Set the output binary name based on OS
 ifeq ($(OS), Linux)

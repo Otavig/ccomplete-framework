@@ -17,5 +17,6 @@ int sis_empty(const IStack *stack);
 void sfree_stack(IStack *stack);  
 void sprint_stack(const IStack *stack);
 int ssearch(const IStack *stack, int value);
+int sget_at_index(const IStack *stack, size_t index);
 
 #endif

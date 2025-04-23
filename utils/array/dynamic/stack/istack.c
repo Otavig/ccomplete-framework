@@ -132,3 +132,18 @@ int ssearch(const IStack *stack, int value) {
     }
     return -1;
 }
+
+/**
+ * The `get_at_index` function returns the value from the stack at the specified index, if valid.
+ * 
+ * @param stack The stack from which to access a value.
+ * @param index The index of the element you want to access.
+ * 
+ * @return The value at the specified index or -1 if the index is invalid.
+ */
+ int sget_at_index(const IStack *stack, size_t index) {
+    if (index >= stack->size) {
+        return -1;
+    }
+    return stack->data[index];
+}
