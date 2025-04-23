@@ -225,6 +225,80 @@ O framework **CCOMPLETE** é uma coleção de utilitários escritos em C para ma
 - **Localização**: `csize.c`
 
 ---
+# 🪟 Como Usufruir do Framework no Windows
+Siga os passos abaixo para compilar e executar o projeto em ambientes Windows utilizando o MSYS2.
+
+### 📥 Passo 0: Instalar o MSYS2
+Baixe e instale o [MSYS2](https://www.msys2.org/) a partir do site oficial ou utilize o instalador fornecido com o projeto (se disponível).
+
+### 🔄 Passo 1: Atualizar os Pacotes
+Abra o terminal do **MSYS2** e execute o comando abaixo para atualizar os pacotes do sistema:
+```bash
+pacman -Syu
+```
+
+### 📦 Passo 2: Instalar dependências
+Instale os pacotes necessários para compilar o projeto:
+```bash
+pacman -S base-devel gcc make
+```
+
+### 🛠️ Passo 3: Compilar e executar o projeto
+No diretório raiz do projeto, execute:
+```bash
+make run
+```
+
+Este comando irá compilar o código e executar o binário gerado.
+
+---
+
+# Como Usufruir do Framework no Linux
+
+Este projeto utiliza um sistema de compilação baseado em `make`. Siga os passos abaixo para instalar as dependências e executar o projeto em um sistema Linux.
+
+---
+
+## ✅ Pré-requisitos
+
+Antes de iniciar, certifique-se de ter os seguintes pacotes instalados:
+
+- `make`
+- `gcc` (ou outro compilador C/C++)
+- Pacotes de desenvolvimento essenciais
+
+---
+
+## 📦 Instalação das Dependências
+
+### Debian/Ubuntu
+
+```bash
+sudo apt update
+sudo apt install build-essential
+```
+
+### Arch Linux / Manjaro
+```bash
+sudo pacman -S base-devel
+```
+
+## 🚀 Como Compilar e Executar
+
+### Abra o terminal.
+### Navegue até o diretório raiz do projeto:
+
+```bash
+cd /caminho/para/seu/projeto
+```
+
+### Compile e execute o projeto:
+
+```bash
+make run
+```
+
+---
 
 ## **Como Usar o Framework**
 
@@ -245,48 +319,6 @@ O framework **CCOMPLETE** é uma coleção de utilitários escritos em C para ma
    ```bash
    make clean
    ```
-
----
-
-Este documento serve como guia para entender e utilizar as funcionalidades do framework **CCOMPLETE**.
-
-Otavig: Quero que vc faça isso no readme 
-
-Workspace: Collecting workspace informationAqui está o conteúdo atualizado do readme.md com melhorias na formatação e explicações mais detalhadas:
-
-```markdown
-# CCOMPLETE
-
-## Descrição
-Este projeto é uma estrutura modular em C que implementa diversas funcionalidades, como ordenação, busca binária, manipulação de pilhas dinâmicas, e exibição de dados.
-
-## Pré-requisitos
-Antes de começar, certifique-se de ter o [MSYS2](https://www.msys2.org/) instalado no seu sistema, caso não tenha acesse o site descrito ou instale dos arquivos.
-
-## Passos para Configuração e Execução
-
-### Passo 0: Instalar o MSYS2
-Baixe e instale o MSYS2 a partir do site oficial.
-
-### Passo 1: Atualizar os pacotes
-Abra o terminal do MSYS2 e execute:
-```bash
-pacman -Syu
-```
-
-### Passo 2: Instalar dependências
-Instale os pacotes necessários para compilar o projeto:
-```bash
-pacman -S base-devel gcc make
-```
-
-### Passo 3: Compilar e executar o projeto
-No diretório raiz do projeto, execute:
-```bash
-make run
-```
-
-Este comando irá compilar o código e executar o binário gerado.
 
 ## Estrutura do Projeto
 O projeto está organizado da seguinte forma:
