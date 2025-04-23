@@ -17,7 +17,9 @@ SRC = \
     utils/inputs/input_int/input_int.c \
     utils/inputs/input_float/input_float.c \
     utils/typeof_input/typeof_input.c \
-    utils/fgets_dynamic/fgets_dynamic.c
+    utils/fgets_dynamic/fgets_dynamic.c \
+    utils/hashmap/hashmap.c \
+    utils/array/dynamic/queue/queue.c
 
 # Set the output binary name based on OS
 ifeq ($(OS), Linux)

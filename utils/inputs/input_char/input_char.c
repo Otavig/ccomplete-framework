@@ -1,20 +1,27 @@
 #include <stdio.h>
+#include <stdarg.h>
 #include "input_char.h"
 
 /**
- * The function `input_char` takes a message as input, displays it to the user, reads a single
- * character input from the user, and returns that character.
+ * The function `input_char` takes a format string and optional arguments, prints the formatted string,
+ * reads a character from the user, and returns it.
  * 
- * @param msg The `msg` parameter in the `input_char` function is a pointer to a constant character
- * array (string) that represents the message or prompt to be displayed to the user when requesting
- * input.
+ * @param fmt The `fmt` parameter in the `input_char` function is a format string that specifies how
+ * the subsequent arguments should be formatted and printed using `vprintf`.
  * 
- * @return The function `input_char` is returning a single character inputted by the user after
- * displaying the message specified by the `msg` parameter.
+ * @return The `input_char` function returns a character inputted by the user after displaying the
+ * formatted string specified by the `fmt` parameter using `vprintf`.
  */
-char input_char(const char* msg){
+char input_char(const char* fmt, ...) {
     char c;
-    printf("%s ", msg);
-    scanf(" %c", &c);
-    return c;
+
+    if (fmt != NULL) {
+        va_list args;
+        va_start(args, fmt);
+        vprintf(fmt, args);
+        va_end(args);
+    }
+
+    scanf(" %c", &c);  
+    return c ? c : 'a';
 }

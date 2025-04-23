@@ -1,6 +1,8 @@
 #ifndef INPUT_INT_H
 #define INPUT_INT_H
 
-int input_int(const char* msg);
+#include <stdarg.h> 
+
+int input_int(const char* fmt, ...);
 
 #endif

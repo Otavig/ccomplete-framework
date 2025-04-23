@@ -14,6 +14,7 @@
 #include "stdlib.h"    // General utility functions (e.g., malloc, free, atoi, exit, etc.)
 #include "ctype.h"     // Character classification functions (e.g., isdigit, toupper, isalpha, etc.)
 #include "stdbool.h"   // Boolean type and true/false macros (e.g., true, false, bool)
+#include "stdarg.h"    // Functions for manipulating variable function arguments (e.g. va_list, va_start, va_arg, va_end)
 
 
 // Custom utility libraries
@@ -32,5 +33,7 @@
 #include "utils/inputs/input_float/input_float.h" // Input functions for reading floating-point numbers (e.g., reading a float)
 #include "utils/typeof_input/typeof_input.h" // Detecting the type of input (e.g., determining if input is an integer, float, etc.)
 #include "utils/fgets_dynamic/fgets_dynamic.h" // Dynamic input function that adjusts buffer size based on input length
+#include "utils/hashmap/hashmap.h"  // Includes the implementation of a HashMap, typically used for storing data in key-value pairs.
+#include "utils/array/dynamic/queue/queue.h"  // Includes the implementation of a dynamic Queue, following the FIFO (First In, First Out) principle.
 
 #endif

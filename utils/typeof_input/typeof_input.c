@@ -2,20 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "typeof_input.h"
 
-/**
- * The above functions determine the data type of an input value and parse it accordingly.
- * 
- * @param input ```c
- * 
- * @return The `typeof_input` function determines the data type of the input string provided based on
- * its content. It returns one of the following values from the `DataType` enum: `INT` for integer,
- * `FLOAT` for floating-point number, `STRING` for string, or `CHAR` for single character.
- */
-typedef enum {
-    INT, FLOAT, STRING, CHAR
-} DataType;
-
+// Function definition
 DataType typeof_input(const char* input) {
     if (strlen(input) == 1 && isalpha(input[0])) {
         return CHAR; 
@@ -57,7 +46,7 @@ void parse_value(const char* input) {
             break;
         }
         case CHAR: {
-            printf("Type: Caracter, Value: %c\n", input[0]);
+            printf("Type: Character, Value: %c\n", input[0]);
             break;
         }
     }
