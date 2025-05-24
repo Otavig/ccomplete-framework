@@ -13,10 +13,16 @@
  */
 void bisort(int *list, int size) {
     for(int i = 0; i < size; i++) {
+        int is_sorted = 0;
         for (int j = 0; j < size - i - 1; j++) {
             if(list[j] > list[j + 1]) {
                 swap(list, j, j+1);
+                is_sorted = 1;
             }
+        }
+
+        if(is_sorted == 1) {
+            break;
         }
     }
 }
